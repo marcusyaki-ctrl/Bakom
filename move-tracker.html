@@ -395,7 +395,7 @@
         <!-- Header -->
         <header>
             <h1>🌍 NYC → Israel Move Tracker</h1>
-            <p class="subtitle">Organize your move together - Yaki & Wife</p>
+            <p class="subtitle">Organize your move together - Yaki & Naama</p>
         </header>
 
         <!-- Stats -->
@@ -462,7 +462,7 @@
                     <label>Assigned To</label>
                     <select id="taskAssigned">
                         <option value="Me">👤 Yaki</option>
-                        <option value="Wife">👥 Wife</option>
+                        <option value="Wife">👥 Naama</option>
                         <option value="Both">👨‍👩‍👧 Both</option>
                     </select>
                 </div>
@@ -495,7 +495,7 @@
 
         <!-- Footer -->
         <footer>
-            <p>💡 Tip: Refresh this page to see updates. Share this link with your wife to collaborate!</p>
+            <p>💡 Tip: Refresh this page to see updates. Share this link with Naama to collaborate!</p>
         </footer>
     </div>
 
@@ -647,7 +647,7 @@
                     <div class="task-tags">
                         <span class="tag tag-category ${task.category.toLowerCase()}">${task.category === 'NYC' ? '📍 NYC' : '🕯️ Israel'}</span>
                         ${task.mission ? `<span class="tag tag-mission">${task.mission}</span>` : ''}
-                        <span class="tag tag-assigned">${task.assigned === 'Both' ? '👨‍👩‍👧 Both' : task.assigned === 'Me' ? '👤 Yaki' : '👥 Wife'}</span>
+                        <span class="tag tag-assigned">${task.assigned === 'Both' ? '👨‍👩‍👧 Both' : task.assigned === 'Me' ? '👤 Yaki' : '👥 Naama'}</span>
                         ${task.dueDate ? `<span class="tag tag-due">📅 ${new Date(task.dueDate).toLocaleDateString()}</span>` : ''}
                     </div>
                     ${task.link ? `<a href="${task.link}" target="_blank" class="task-link">🔗 View Link</a>` : ''}
