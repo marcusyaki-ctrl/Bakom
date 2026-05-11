@@ -809,10 +809,10 @@
             </div>
 
             <div class="sidebar-section">
-                <div class="sidebar-title">Actions</div>
-                <button class="nav-button" onclick="showForm()" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-                    ➕ New Task
-                </button>
+                <div class="sidebar-title">Tools</div>
+                <button class="nav-button" onclick="exportData()">📥 Export</button>
+                <button class="nav-button" onclick="document.getElementById('importFile').click()">📤 Import</button>
+                <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
             </div>
         </aside>
 
@@ -823,9 +823,7 @@
             <div class="header">
                 <h1 id="pageTitle">All Tasks</h1>
                 <div class="header-actions">
-                    <button class="btn btn-secondary" onclick="exportData()">📥 Export</button>
-                    <button class="btn btn-secondary" onclick="document.getElementById('importFile').click()">📤 Import</button>
-                    <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
+                    <button class="btn btn-primary" onclick="showForm()">➕ New Task</button>
                 </div>
             </div>
 
